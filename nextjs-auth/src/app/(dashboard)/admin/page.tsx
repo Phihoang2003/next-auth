@@ -10,7 +10,7 @@ const Admin =async() => {
   return (
     <div>
         {session?.user?(
-    <div>Welcome to {session?.user.username}</div>):(<div>Please to sign in to see Admin Page</div>)}
+    <div>Welcome to {session?.user.username||session.user.name}</div>):(<div>Please to sign in to see Admin Page</div>)}
     </div>
   )
 }
